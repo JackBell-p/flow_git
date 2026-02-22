@@ -1,0 +1,18 @@
+.container {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.header {
+    background-color: red;
+    height: 50px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    float: left;
+    font-size: 40px;
+}
