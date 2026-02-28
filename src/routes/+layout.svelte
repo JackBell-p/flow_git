@@ -1,14 +1,20 @@
 <script lang="ts">
-  
+  import { page } from "$app/state";
+
+  const nav_items = [
+    { path: "/", lable: "流量"},
+    { path: "/log", lable: "日志"},
+    { path: "/about", lable: "关于"},
+    { path: "/donation", lable: "打赏"}
+  ];
 </script>
 
 <div class="container">
   <header class="header">
     <ul>
-      <li><a href="/">流量</a></li>
-      <li><a href="/log">日志</a></li>
-      <li><a href="/about">关于</a></li>
-      <li><a href="/donation">打赏</a></li>
+      {#each nav_items as item}
+        <li><a href={item.path} class={page.url.pathname === item.path ? 'active' : ''}>{item.lable}</a></li>
+      {/each}
     </ul>
   </header>
 

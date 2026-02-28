@@ -4,7 +4,6 @@
 }
 
 .header {
-    background-color: red;
     height: 50px;
     display: flex;
     justify-content: center;
@@ -24,9 +23,25 @@ li {
 
 a {
     text-decoration: none;
-    color: #ffffff;
+    color: #000000;
+    position: relative;
+    padding-bottom: 5px;
 }
 
-a:hover {
-    color: #bebebe;
+a::after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 4px;
+    background-color: #00BFFF;
+    bottom: 0px;
+    left: 10%;
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+a:hover::after,
+a.active::after {
+    opacity: 1;
 }
