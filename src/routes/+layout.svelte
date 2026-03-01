@@ -24,5 +24,5 @@
 </div>
 
 <style>
-  @import "./+page.css";
+  @import "./+layout.css";
 </style>
