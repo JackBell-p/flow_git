@@ -30,13 +30,13 @@
 }
 
 .log-entry.info .level {
-    color: #0f0;
+    color: #16baaa;
 }
 
 .log-entry.warn .level {
-    color: #ff0;
+    color: #ffb800;
 }
 
 .log-entry.error .level {
-    color: #f00;
+    color: #ff5722;
 }
