@@ -21,6 +21,7 @@ export let width = "100%";
     .mac-scrollbar-content {
         display: block;
         width: 100%;
+        height: 100%;
     }
 
     .mac-scrollbar-root::-webkit-scrollbar {
