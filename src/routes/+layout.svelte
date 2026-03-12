@@ -1,5 +1,6 @@
 <script lang="ts">
   import { page } from "$app/state";
+  import Mac_Scrollbar from "$lib/components/mac_scrollbar.svelte";
 
   const nav_items = [
     { path: "/", lable: "流量"},
@@ -19,7 +20,9 @@
   </header>
 
   <main>
-    <slot />
+    <Mac_Scrollbar>
+      <slot />
+    </Mac_Scrollbar>
   </main>
 </div>
 
