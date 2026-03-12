@@ -16,8 +16,6 @@ export let width = "100%";
         overflow-y: auto;
         overflow-x: hidden;
         background: transparent;
-        scrollbar-width: thin;
-        scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
      }
 
     .mac-scrollbar-content {
@@ -48,5 +46,9 @@ export let width = "100%";
 
     .mac-scrollbar-root::-webkit-scrollbar-thumb:active {
         background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .mac-scrollbar-content::-webkit-scrollbar-button {
+        display: none;
     }
 </style>
