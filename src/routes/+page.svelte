@@ -46,5 +46,9 @@
 <div bind:this={chart_div} class="chart"></div>
 
 <style>
-    @import "./+page.css";
+    .chart {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
 </style>

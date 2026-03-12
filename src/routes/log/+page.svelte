@@ -26,5 +26,46 @@
 </div>
 
 <style>
-    @import "./+page.css";
+  .log-container {
+    color: #000;
+  }
+
+  .log-entry {
+    all: unset;
+    padding: 20px;
+    border: 2px solid transparent;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .log-entry:hover {
+    background-color: #dcdcdc;
+    border: 2px solid #c0c0c0;
+  }
+
+  .log-entry.selected {
+    background-color: #cce7ff;
+    border: 2px solid #99ccff;
+  }
+
+  .time {
+    color: #888;
+    margin-right: 8px;
+  }
+
+  .level {
+    margin-right: 8px;
+  }
+
+  .log-entry.info .level {
+    color: #16baaa;
+  }
+
+  .log-entry.warn .level {
+    color: #ffb800;
+  }
+
+  .log-entry.error .level {
+    color: #ff5722;
+  }
 </style>
